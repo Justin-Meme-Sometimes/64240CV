@@ -1,34 +1,54 @@
+body{
+    background-color:#2A2A2A;
+    font-family: "Helvetica Neue",Helvetica;
+}
 
+.activities{
+    float:inline-start;
+    clear:both;
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+    background-color: #c2c1c1;
+    box-shadow: 5px 5px #929292;
+    border-radius:0.5em;
+    text-align: center;
+}
 .centername{
     margin-top: 4em;
     width: 99%;
     padding: 0.5em;
     height: 25%;
     text-align: center;
-    background-color:aqua;
+    background-color:#c2c1c1;
+    box-shadow: 5px 5px #929292;
     border-radius: 0.5em;
 }
 .centername p {
+
+    color:#2A2A2A;
     font-size:3em;
     font-weight:bold;
 }
-img{
-    border-radius: 0.5em;
-    width: 35%;
-    height: 25%;
-}
-imagecolumn{
+img{  
+    margin: auto;
     float: left;
-    padding-left:7em;
-    width: 50%;
-    height: 50%;
-    border-width: thin;
+    width: 20em;
+    border-radius: 0.5em;
+}
+.imagetextcol{
+    margin-top: 4em;
+    height: 40em;
+}
+h2 {
+    color: #655A7C;
 }
 nav ul {
     /*This is the other part of the navbar where there is no margin or padding to save space for the li element */
     width: 99%;
-    background-color: #AB92BF;
+    background-color: #2A2A2A;
     border-radius: 0.5em;
+    border-bottom: 1px solid #c2c1c1;
     list-style-type: none;
     margin: 0; 
     overflow: hidden;
@@ -45,6 +65,7 @@ nav ul li {
 }
 nav ul li, .boldface{
     font-weight: bold;
+    font-size: 1.2em;
     float: left;
 }
 nav ul li, .right{
@@ -52,9 +73,9 @@ nav ul li, .right{
 }
 textcolumn{
     float: left;
-    width: 40%;
-    padding-left: 0.5em;
-    height:50;
+    color: #c2c1c1;
+    width: 40em;
+    padding-left: 3em;
 }
 
 
