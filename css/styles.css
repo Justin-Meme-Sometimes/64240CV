@@ -1,0 +1,60 @@
+
+.centername{
+    margin-top: 4em;
+    width: 99%;
+    padding: 0.5em;
+    height: 25%;
+    text-align: center;
+    background-color:aqua;
+    border-radius: 0.5em;
+}
+.centername p {
+    font-size:3em;
+    font-weight:bold;
+}
+img{
+    border-radius: 0.5em;
+    width: 35%;
+    height: 25%;
+}
+imagecolumn{
+    float: left;
+    padding-left:7em;
+    width: 50%;
+    height: 50%;
+    border-width: thin;
+}
+nav ul {
+    /*This is the other part of the navbar where there is no margin or padding to save space for the li element */
+    width: 99%;
+    background-color: #AB92BF;
+    border-radius: 0.5em;
+    list-style-type: none;
+    margin: 0; 
+    overflow: hidden;
+    padding: 0;
+}
+nav ul li {
+  /*This is the nav li element that is block where the text is centered and the text
+  is floated to the left, with a background of darker purple*/
+  color: #655A7C;
+  display: block;
+  padding: 15px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+nav ul li, .boldface{
+    font-weight: bold;
+    float: left;
+}
+nav ul li, .right{
+    float: right;
+}
+textcolumn{
+    float: left;
+    width: 40%;
+    padding-left: 0.5em;
+    height:50;
+}
+
+
