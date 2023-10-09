@@ -1,17 +1,27 @@
+
+@font-face{
+    font-family: Cantarell;
+    src: url(/fonts/Cantarell-Regular.ttf);
+}
+@font-face{
+    font-family: Oxygen;
+    src: url(/fonts/Oxygen-Regular.ttf)
+}
 body{
     background-color:#2A2A2A;
-    font-family: "Helvetica Neue",Helvetica;
-}
+    font-family: "Oxygen","Cantarell";
 
+}
 .activities{
-    float:inline-start;
+    position:inline-block;
     clear:both;
-    margin: auto;
-    width: 50%;
+    margin:auto;
+    margin-bottom: 3em;
+    width: 60%;
     padding: 15px;
     background-color: #c2c1c1;
     box-shadow: 5px 5px #929292;
-    border-radius:0.5em;
+    border-radius:0.5em; 
     text-align: center;
 }
 .centername{
@@ -23,23 +33,16 @@ body{
     background-color:#c2c1c1;
     box-shadow: 5px 5px #929292;
     border-radius: 0.5em;
+    margin-bottom: 30px;
 }
 .centername p {
 
     color:#2A2A2A;
     font-size:3em;
     font-weight:bold;
+    
 }
-img{  
-    margin: auto;
-    float: left;
-    width: 20em;
-    border-radius: 0.5em;
-}
-.imagetextcol{
-    margin-top: 4em;
-    height: 40em;
-}
+
 h2 {
     color: #655A7C;
 }
@@ -48,7 +51,7 @@ nav ul {
     width: 99%;
     background-color: #2A2A2A;
     border-radius: 0.5em;
-    border-bottom: 1px solid #c2c1c1;
+    border-bottom: 1px dotted #c2c1c1;
     list-style-type: none;
     margin: 0; 
     overflow: hidden;
@@ -71,11 +74,148 @@ nav ul li, .boldface{
 nav ul li, .right{
     float: right;
 }
-textcolumn{
-    float: left;
-    color: #c2c1c1;
-    width: 40em;
-    padding-left: 3em;
+
+
+footer{
+    /*This footer component scrolls with you as you go up and down the page because it's fixed also there is a little curve to it */
+    border-radius: 3px;
+    bottom: 0px;
+    clear:both;
+    margin: 0px;
+    overflow:hidden;
+    position:fixed;
 }
 
+.item1 { grid-area: left; }
+.item2 { grid-area: right; }
+.item3 { grid-area: center; }
 
+.grid-container {
+    width: 90%;
+    display: grid;
+    grid-template-areas:
+    'left right center';
+    gap: 1em;
+    justify-items: center;
+}
+.image-container {
+    height: 100px;
+    width: 100px;
+}
+h2 , hr {
+    text-align: center;
+}
+.image{
+    width:100px;
+    height:100px;
+    object-fit:cover;
+}
+
+  /* When you mouse over the container, fade in the overlay title */
+@media screen and (max-width: 1440px) and (min-width: 834px) {
+    body {
+    width: 1240px;
+    }
+    .image{
+        width:100px;
+        height:100px;
+        object-fit:cover;
+    }
+    #textcolumn{
+        float: left;
+        width: 50%;
+        color: #c2c1c1;
+        margin-left: 40px;
+        padding-right: 4em;
+    }
+    .trr > p {
+        padding-top: 1em;
+        padding-bottom:2em;
+        padding-right:40px;
+        border-radius:0.5em;
+        text-align: center;
+        box-shadow: 1px 1px 2px -1px #929292;;
+    }
+    img.MyImage{  
+        float: left;
+        width: 30%;
+        border-radius: 0.5em;
+    }
+    .imagetextcol{
+        margin-top: 50px;
+        height: 40em;
+        margin-bottom: 100px;
+    }
+}
+@media screen and (max-width: 834px) and (min-width: 391px) {
+    body{
+        width: 600px;
+    }
+    .image{
+        width:75px;
+        height:75px;
+        object-fit:cover;
+    }
+    #textcolumn{
+        color: #c2c1c1;
+        padding-left: 3em;
+        margin: 20px auto;
+        display:grid;
+        max-width:500px;
+        grid-auto-rows: minmax(100px, auto);
+        margin-top: 3em;
+    }
+    .trr > p {
+        padding-top: 1em;
+        padding-bottom:2em;
+        padding-right:2em;
+        border-radius:0.5em;
+        text-align: center;
+        box-shadow: 1px 1px 2px -1px #929292;;
+    }
+    img.MyImage{
+        border-radius: 0.5em;
+        margin-left:2.5em;
+        width:300px;
+    }
+    .imagetextcol{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 390px){
+    body{
+        width: 350px;
+    }
+    .image{
+        width:40px;
+        height:40px;
+        object-fit:cover;
+    }
+    #textcolumn{
+        color: #c2c1c1;
+        padding-left: 3em;
+        margin: 20px auto;
+        display:grid;
+        max-width:80%;
+        grid-auto-rows: minmax(50px, auto);
+        margin-top: 3em;
+    }
+    #trr > p {
+        padding-top: 1em;
+        padding-bottom:2em;
+        padding-right:2em;
+        border-radius:0.5em;
+        text-align: center;
+        box-shadow: 1px 1px 2px -1px #929292;;
+    }
+    img.MyImage{
+        width:70%;
+        margin-left:3em;
+        border-radius:0.5em;
+    }
+    .imagetextcol{
+        text-align: center;
+        width:80%;
+    }
+    
+}
